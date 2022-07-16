@@ -1,11 +1,11 @@
 import * as React from "react";
 import "./App.css";
-import About from "./about/About";
+import Profile from "./components/profile/Profile";
 
 function App() {
   return (
     <div>
-      <About />
+      <Profile />
     </div>
   );
 }
