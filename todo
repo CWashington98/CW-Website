@@ -1,3 +1,9 @@
+SECTIONS
+- Profile (functionally complete)
+- About Me
+- Resume
+- Contact
+
 - add a resume section
 - add relevant social media links
 - add scrolling animation to website
@@ -5,3 +11,8 @@
 - add contact section
 - add aws certification image/link
 - add accenture referral link???
+- make profile fade out more aggressive (disappearing fast)
+- keep buttons on screen? maybe stick to bottom for quick contact/resume?
+
+- reattach buttons to new location when in the resume/contact sections
+    have buttons move back to screen location after scrolling away again

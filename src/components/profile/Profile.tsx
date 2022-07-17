@@ -12,7 +12,7 @@ const Profile = () => {
           <span className="profile-details-role">
             <Typewriter
               options={{
-                strings: ["Placeholder", "Roles"],
+                strings: sequenceItems,
                 autoStart: true,
                 loop: true,
               }}

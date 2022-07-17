@@ -1,6 +1,7 @@
-export const sequenceItems = [
-    [
-        "Full-Stack Developer", 
-        1000
-    ]
-]
+export const sequenceItems: string[] = [
+    "Software Engineer",
+    "Technology Consultant",
+    "Infrastructure Engineer",
+    "Solution Architect",
+    "Full-Stack Developer"
+];
