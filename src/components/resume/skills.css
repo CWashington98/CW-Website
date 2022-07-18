@@ -58,10 +58,12 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(1, 1fr);
-
+    margin: auto;
+    width: 90%;
   }
   .skill-section {
-    padding: 1.2rem;
+    align-items: center;
     display: grid;
+    padding: 1.2rem;
   }
 }
