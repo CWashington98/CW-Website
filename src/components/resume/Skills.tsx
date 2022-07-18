@@ -2,11 +2,22 @@ import React from "react";
 import "./skills.css";
 import { Languages, Frameworks, CloudCertifications } from "./skillsItems";
 import { BsFillPatchCheckFill } from "react-icons/bs";
+import AWS_SA_Badge from "../../assets/aws-certified-solutions-architect-associate.png"
 
 const Skills = () => {
   return (
     <div className="skills-wrapper">
       <div className="skills-parent">
+        <div className="certification-container">
+          <a
+            href="https://www.credly.com/badges/a8641cff-54ef-4251-8d97-168df6f24909/public_url"
+            target={"_blank"}
+          >
+            <img className="certification-img"
+              src={AWS_SA_Badge}
+            />
+          </a>
+        </div>
         <div className="skills-container">
           <div className="skill-section languages-container">
             <h3>Languages</h3>
@@ -35,22 +46,6 @@ const Skills = () => {
                 </div>
               ))}
             </div>
-          </div>
-          <div className="skill-section cloud-container">
-            <h3>Cloud Certifications</h3>
-            <div className="skill-content"></div>
-            {/* <div
-              data-iframe-width="150"
-              data-iframe-height="270"
-              data-share-badge-id="a8641cff-54ef-4251-8d97-168df6f24909"
-              data-share-badge-host="https://www.credly.com"
-            ></div>
-            <script
-              type="text/javascript"
-              async
-              src="//cdn.credly.com/assets/utilities/embed.js"
-            ></script> */}
-            {/* {CloudCertifications.map((item) => <article>{item.url}</article>)} */}
           </div>
         </div>
       </div>

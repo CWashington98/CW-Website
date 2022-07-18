@@ -9,8 +9,8 @@ function App() {
   return (
     <div>
       <Profile/>
-      <About/>
       <Skills/>
+      <About/>
     </div>
   );
 }

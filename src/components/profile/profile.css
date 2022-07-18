@@ -18,8 +18,6 @@
   background-color: whitesmoke;
 }
 
-.profile-details {
-}
 .profile-details-name {
   color: tan;
   font-size: 38px;
@@ -41,7 +39,11 @@
   padding-left: 16px;
   padding-right: 16px;
   border-radius: 6px;
-  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    #5adaff 0,
+    #5468ff 100%
+  );
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
   color: #fff;
@@ -67,36 +69,58 @@
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
 }
 
-.contact-btn{
-    height: 48px;
-    padding-left: 16px;
-    padding-right: 16px;
-    border-radius: 6px;
-    background-image: radial-gradient(100% 100% at 100% 0, #5468ff 0, coral 100%);
-    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
-      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
-    color: #fff;
-    line-height: 1;
-    transition: box-shadow 0.15s, transform 0.15s;
-    touch-action: manipulation;
-    white-space: nowrap;
-    will-change: box-shadow, transform;
-    font-size: 18px;
-  }
-  .contact-btn:hover {
-    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
-      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, coral 0 -3px 0 inset;
-    transform: translateY(-2px);
-    cursor: pointer;
+.contact-btn {
+  height: 48px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 6px;
+  background-image: radial-gradient(100% 100% at 100% 0, #5468ff 0, coral 100%);
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  color: #fff;
+  line-height: 1;
+  transition: box-shadow 0.15s, transform 0.15s;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+.contact-btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, coral 0 -3px 0 inset;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+.contact-btn:active {
+  box-shadow: coral 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.contact-btn:focus {
+  box-shadow: coral 0 0 0 2px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, coral 0 -3px 0 inset;
+}
 
+@media screen and (max-width: 1024px) {
+  .profile-container {
+    padding: 0;
+    margin: 0;
+    justify-content: center;
   }
-  .contact-btn:active {
-    box-shadow: coral 0 3px 7px inset;
-    transform: translateY(2px);
+  .profile-parent {
+    display: grid;
+    padding: 0;
+    text-align: center;
+    min-height: fit-content;
+    background-color: aqua;
   }
-  .contact-btn:focus {
-    box-shadow: coral 0 0 0 2px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-      rgba(45, 35, 66, 0.3) 0 7px 13px -3px, coral 0 -3px 0 inset;
+  .profile-details {
   }
-
   
+  .profile-picture {
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-bottom: 4vh;
+  }
+}

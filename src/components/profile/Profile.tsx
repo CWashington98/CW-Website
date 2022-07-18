@@ -2,6 +2,7 @@ import React from "react";
 import Typewriter from "typewriter-effect";
 import { sequenceItems } from "./profileItems";
 import "./profile.css";
+import resume2022 from "../../assets/resume2022.pdf"
 
 const Profile = () => {
   return (
@@ -25,7 +26,7 @@ const Profile = () => {
         <a>
           <button className="contact-btn">Let's work</button>
         </a>
-        <a>
+        <a href={resume2022} download="Crishon_Washington_Resume">
           <button className="resume-btn">Resume</button>
         </a>
       </div>
