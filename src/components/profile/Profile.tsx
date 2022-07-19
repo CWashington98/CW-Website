@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-import { sequenceItems } from "./profileItems";
+import { SEQUENCE_ITEMS } from "../constants/constants";
 import "./profile.css";
 import resume2022 from "../../assets/resume2022.pdf"
 
@@ -13,7 +13,7 @@ const Profile = () => {
           <span className="profile-details-role">
             <Typewriter
               options={{
-                strings: sequenceItems,
+                strings: SEQUENCE_ITEMS,
                 autoStart: true,
                 loop: true,
               }}

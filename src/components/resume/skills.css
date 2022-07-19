@@ -8,23 +8,26 @@
 }
 
 .skill-section {
-  background-color: navy;
+  background-color: #122620;
   padding: 2.4rem 5rem;
   border-radius: 2rem;
-  border: 1px solid transp arent;
+  border: 2px solid transparent;
+  color: #f4ebd0;
 }
 
 .skill-section:hover {
   background: transparent;
-  border-color: aqua;
+  border-color: #122620;
+  color: #122620;
   transition: 1s;
 }
 
 .skill-section > h3 {
   text-align: center;
   margin-bottom: 2rem;
-  color: whitesmoke;
+  color: #b68d40;
 }
+
 
 .skill-content {
   display: grid;
@@ -39,7 +42,7 @@
 
 .skill-detail-icon {
   margin-top: 6px;
-  color: blue;
+  color: #d6ad60;
 }
 
 .certification-container {

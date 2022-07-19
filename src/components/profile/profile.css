@@ -1,36 +1,30 @@
-.profile-container {
-  background-color: yellow;
-}
 .profile-parent {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
   min-height: fit-content;
-  background-color: aqua;
 }
+
 .profile-options {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
   min-height: fit-content;
-  background-color: whitesmoke;
 }
 
 .profile-details-name {
-  color: tan;
   font-size: 38px;
 }
 .profile-details-role {
-  color: tan;
   font-size: 64px;
 }
 .profile-picture {
   margin: 20px;
   height: 380px;
   width: 380px;
-  background-color: green;
+  background-color: black;
   border-radius: 50%;
 }
 
@@ -39,11 +33,12 @@
   padding-left: 16px;
   padding-right: 16px;
   border-radius: 6px;
-  background-image: radial-gradient(
+  background-color: #B68D40;
+  /* background-image: radial-gradient(
     100% 100% at 100% 0,
-    #5adaff 0,
-    #5468ff 100%
-  );
+    #B68D40 0,
+    #B68D40 100%
+  ); */
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
   color: #fff;
@@ -65,8 +60,8 @@
   transform: translateY(2px);
 }
 .resume-btn:focus {
-  box-shadow: #3c4fe0 0 0 0 2px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  box-shadow: #122620 0 0 0 2px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #122620 0 -3px 0 inset;
 }
 
 .contact-btn {
@@ -74,7 +69,8 @@
   padding-left: 16px;
   padding-right: 16px;
   border-radius: 6px;
-  background-image: radial-gradient(100% 100% at 100% 0, #5468ff 0, coral 100%);
+  background-color: #B68D40;
+  /* background-image: radial-gradient(100% 100% at 100% 0, #F4EBD0 0, #B68D40 100%); */
   box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
   color: #fff;
@@ -96,8 +92,8 @@
   transform: translateY(2px);
 }
 .contact-btn:focus {
-  box-shadow: coral 0 0 0 2px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
-    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, coral 0 -3px 0 inset;
+  box-shadow: #122620 0 0 0 2px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #122620 0 -3px 0 inset;
 }
 
 @media screen and (max-width: 1024px) {
@@ -111,11 +107,7 @@
     padding: 0;
     text-align: center;
     min-height: fit-content;
-    background-color: aqua;
   }
-  .profile-details {
-  }
-  
   .profile-picture {
     margin-left: auto;
     margin-right: auto;

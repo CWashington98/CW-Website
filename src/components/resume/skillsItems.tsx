@@ -14,6 +14,11 @@ interface CloudCertifcation {
   url: string;
 }
 
+interface CodingLanguages {
+  name: string;
+  experience: string;
+}
+
 export const WorkExperience: ResumeExperience[] = [
   {
     company: "Accenture",
@@ -38,21 +43,21 @@ export const WorkExperience: ResumeExperience[] = [
   },
 ];
 
-export const Languages: string[] = [
-  "Python",
-  "TypeScript/JavaScript",
-  "Java",
-  "C/C++",
+export const Languages: CodingLanguages[] = [
+  { name: "Python", experience: "Advanced" },
+  { name: "TypeScript/JavaScript", experience: "Intermediate" },
+  { name: "Java", experience: "Intermediate" },
+  { name: "C/C++", experience: "Academic" },
 ];
 
-export const Frameworks: string[] = [
-  "React",
-  "Angular",
-  "NextJS",
-  "React Native",
-  "Android Studio",
-  "Django",
-  "Flask",
+export const Frameworks: CodingLanguages[] = [
+  { name: "React", experience: "Intermediate" },
+  { name: "Angular", experience: "Intermediate" },
+  { name: "NextJS", experience: "Intermediate" },
+  { name: "React Native", experience: "Intermediate" },
+  { name: "Android Studio", experience: "Academic" },
+  { name: "Django", experience: "Academic" },
+  { name: "Flask", experience: "Academic" },
 ];
 
 export const CloudCertifications: CloudCertifcation[] = [
@@ -62,5 +67,5 @@ export const CloudCertifications: CloudCertifcation[] = [
     level: "Associate",
     expirationDate: "4/22/2025",
     url: "https://www.credly.com/badges/a8641cff-54ef-4251-8d97-168df6f24909/public_url",
-},
+  },
 ];
