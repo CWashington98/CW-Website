@@ -9,25 +9,26 @@ const Profile = () => {
     <div className="profile-container">
       <div className="profile-parent">
         <div className="profile-details">
-          <span className="profile-details-name">Hey I'm Crishon</span>
-          <span className="profile-details-role">
+          <span className="profile-details-name">Hey, I'm Crishon</span>
+          <div className="profile-details-role">
             <Typewriter
               options={{
-                strings: SEQUENCE_ITEMS,
+                strings: SEQUENCE_ITEMS.all,
                 autoStart: true,
                 loop: true,
+                cursor: "",
               }}
             />
-          </span>
+          </div>
         </div>
         <div className="profile-picture">Profile Picture Placeholder</div>
       </div>
       <div className="profile-options">
         <a>
-          <button className="contact-btn">Let's work</button>
+          <button className="profile-btn contact-btn">Let's work</button>
         </a>
         <a href={resume2022} download="Crishon_Washington_Resume">
-          <button className="resume-btn">Resume</button>
+          <button className="profile-btn resume-btn">Resume</button>
         </a>
       </div>
     </div>

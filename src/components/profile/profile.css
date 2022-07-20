@@ -13,15 +13,20 @@
   padding: 20px;
   min-height: fit-content;
 }
-
 .profile-details-name {
-  font-size: 38px;
+  font-size: 52px;
 }
 .profile-details-role {
-  font-size: 64px;
+  font-size: 84px;
+  width: 20vh;
+}
+.Typewriter__wrapper{
+  position: absolute;
+  width: 20vw;
 }
 .profile-picture {
-  margin: 20px;
+  margin-left: 10vw;
+  margin-top: 6vh;
   height: 380px;
   width: 380px;
   background-color: black;
@@ -30,8 +35,6 @@
 
 .resume-btn {
   height: 48px;
-  padding-left: 16px;
-  padding-right: 16px;
   border-radius: 6px;
   background-color: #B68D40;
   /* background-image: radial-gradient(
@@ -66,8 +69,6 @@
 
 .contact-btn {
   height: 48px;
-  padding-left: 16px;
-  padding-right: 16px;
   border-radius: 6px;
   background-color: #B68D40;
   /* background-image: radial-gradient(100% 100% at 100% 0, #F4EBD0 0, #B68D40 100%); */
@@ -96,23 +97,52 @@
     rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #122620 0 -3px 0 inset;
 }
 
+.profile-btn{
+  width: 12rem;
+}
 @media screen and (max-width: 1024px) {
   .profile-container {
     padding: 0;
     margin: 0;
     justify-content: center;
   }
+  .profile-details-role{
+    height: 14vh;
+  }
   .profile-parent {
     display: grid;
     padding: 0;
+    padding-top: 4vh;
     text-align: center;
     min-height: fit-content;
+  }
+  .profile-details-name{
+    font-size: 34px;
+    margin: 0;
+    justify-content: center;
+  }
+  .profile-details-role{
+    margin: 0;
+    justify-content: center;
+    width: 100%;
+    font-size: 60px;
   }
   .profile-picture {
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
-    margin-bottom: 4vh;
+    margin-bottom: 0;
+    margin-top: 2vh;
+    height: 22vh;
+    width: 22vh;
+  }
+  .Typewriter__wrapper{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+  }
+  .profile-btn{
+    width: 28vw;
   }
 }
