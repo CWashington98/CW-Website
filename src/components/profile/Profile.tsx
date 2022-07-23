@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect";
 import { SEQUENCE_ITEMS } from "../constants/constants";
 import "./profile.css";
-import resume2022 from "../../assets/resume2022.pdf"
+import resume2022 from "../../assets/resume2022.pdf";
 
 const Profile = () => {
   return (
@@ -23,7 +23,7 @@ const Profile = () => {
         </div>
         <div className="profile-picture">Profile Picture Placeholder</div>
       </div>
-      <div className="profile-options">
+      <div className="profile-options" >
         <a>
           <button className="profile-btn contact-btn">Let's work</button>
         </a>

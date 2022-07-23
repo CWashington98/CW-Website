@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./skills.css";
 import { Languages, Frameworks, CloudCertifications } from "./skillsItems";
 import { BsFillPatchCheckFill } from "react-icons/bs";
 import AWS_SA_Badge from "../../assets/aws-certified-solutions-architect-associate.png"
 
 const Skills = () => {
+
   return (
     <div className="skills-wrapper">
       <div className="skills-parent">
@@ -19,7 +20,7 @@ const Skills = () => {
           </a>
         </div>
         <div className="skills-container">
-          <div className="skill-section languages-container">
+          <div className="skill-section languages-container" >
             <h3>Languages</h3>
             <div className="skill-content">
               {Languages.map((item) => (
