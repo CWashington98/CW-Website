@@ -1,4 +1,3 @@
-
 export const ABOUTCONTENT = {
     text: {
         Intro:`
@@ -9,15 +8,15 @@ export const ABOUTCONTENT = {
     content:{
         PSU_MSP: {
             link:"https://www.millennium.psu.edu/",
-            image: "src/assets/Millennium-Scholars-logo.jpg",
+            image: "../../assetsMillennium-Scholars-logo.jpg",
         },
         Middleburg: {
             link:"https://www.middleburgva.gov/",
-            image: "src/assets/Middleburg.png",
+            image: "../../assets/Middleburg.png",
         },
         PSU_GN:{
             link:"https://www.pennstatealphas.com/home",
-            image: "src/assets/PSU_Alphas.jpg",
+            image: "../../assets/PSU_Alphas.jpg",
         },
         Codehouse:{
             link: "https://www.codehouse.solutions/",

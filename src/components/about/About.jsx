@@ -3,6 +3,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { ABOUTCONTENT } from "./AboutConstants";
 import "./about.css";
+import PSU_Alphas from "../../assets/PSU_Alphas.jpg";
+import Millennium_Scholars from "../../assets/Millennium_Scholars.jpg"
+import Middleburg from "../../assets/Middleburg.png"
+
 const About = () => {
   useEffect(() => {
     AOS.init({
@@ -28,17 +32,17 @@ const About = () => {
         <div className="about-content-container">
           <div className="about-GN about-content"data-aos="fade-right" data-aos-duration="2000">
             <a href={ABOUTCONTENT.content.PSU_GN.link} target="_blank">
-              <img src={ABOUTCONTENT.content.PSU_GN.image} />
+              <img src={PSU_Alphas} />
             </a>
           </div>
           <div className="about-msp about-content" data-aos="fade-left" data-aos-duration="2000">
             <a href={ABOUTCONTENT.content.PSU_MSP.link} target="_blank">
-              <img src={ABOUTCONTENT.content.PSU_MSP.image} />
+              <img src={Millennium_Scholars} />
             </a>
           </div>
           <div className="about-middleburg about-content" data-aos="fade-right" data-aos-duration="2000">
             <a href={ABOUTCONTENT.content.Middleburg.link} target="_blank">
-              <img src={ABOUTCONTENT.content.Middleburg.image} />
+              <img src={Middleburg} />
             </a>
           </div>
         </div>

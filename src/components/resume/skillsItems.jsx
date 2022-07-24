@@ -1,25 +1,25 @@
-interface ResumeExperience {
-  company: string;
-  role: string;
-  description: string[];
-  start: string;
-  end: string;
-}
+// interface ResumeExperience {
+//   company: string;
+//   role: string;
+//   description: string[];
+//   start: string;
+//   end: string;
+// }
 
-interface CloudCertifcation {
-  provider: string;
-  name: string;
-  level: string;
-  expirationDate: string;
-  url: string;
-}
+// interface CloudCertifcation {
+//   provider: string;
+//   name: string;
+//   level: string;
+//   expirationDate: string;
+//   url: string;
+// }
 
-interface CodingLanguages {
-  name: string;
-  experience: string;
-}
+// interface CodingLanguages {
+//   name: string;
+//   experience: string;
+// }
 
-export const WorkExperience: ResumeExperience[] = [
+export const WorkExperience = [
   {
     company: "Accenture",
     role: "Technology Architecture Analyst",
@@ -43,14 +43,14 @@ export const WorkExperience: ResumeExperience[] = [
   },
 ];
 
-export const Languages: CodingLanguages[] = [
+export const Languages = [
   { name: "Python", experience: "Advanced" },
   { name: "TypeScript/JavaScript", experience: "Intermediate" },
   { name: "Java", experience: "Intermediate" },
   { name: "C/C++", experience: "Academic" },
 ];
 
-export const Frameworks: CodingLanguages[] = [
+export const Frameworks = [
   { name: "React", experience: "Intermediate" },
   { name: "Angular", experience: "Intermediate" },
   { name: "NextJS", experience: "Intermediate" },
@@ -60,7 +60,7 @@ export const Frameworks: CodingLanguages[] = [
   { name: "Flask", experience: "Academic" },
 ];
 
-export const CloudCertifications: CloudCertifcation[] = [
+export const CloudCertifications = [
   {
     provider: "AWS",
     name: "Solution Architect",

@@ -1,10 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-export const SEQUENCE_ITEMS: {
-  all: string[];
-  top: string[];
-  bottom: string[];
-} = {
+export const SEQUENCE_ITEMS = {
   all: [
     "Software Engineer",
     "Technology Consultant",

@@ -10,6 +10,7 @@
   display: grid;
   min-height: fit-content;
 }
+
 .about-content{
   display: grid;
   width: 80vw;  
@@ -27,6 +28,7 @@
   height: 100%;
   border-radius: 2rem;
 }
+
 img:hover{
   box-shadow: #122620;
 }
