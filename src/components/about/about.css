@@ -5,22 +5,18 @@
   min-height: fit-content;
   height: auto;
 }
-
 .about-content-container {
-  display: grid;
   min-height: fit-content;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .about-content{
-  display: grid;
-  width: 80vw;  
+  width: 90%;  
   height: 100%;
   justify-content: center;
   align-items: center;
-  grid-template-columns: repeat(1, 1fr);
-  overflow: hidden;
   margin: 0;
-  padding: 2vh;
+  padding: 1vw;
 }
 .about-content img{
   flex-shrink: 0;
@@ -45,9 +41,18 @@ img:hover{
 
 
 @media screen and (max-width: 1024px) {
+  .about-content-container {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
   .about-content{
     width: 98vw;
     height: 100%;
-    padding: 2vh;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
   }
 }
